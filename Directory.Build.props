@@ -7,8 +7,8 @@
 		<Copyright>Copyright © Hakam FOSTOK</Copyright>
 		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl></PackageProjectUrl>
-		<RepositoryUrl></RepositoryUrl>
+		<PackageProjectUrl>https://github.com/HakamFostok/Disposer</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/HakamFostok/Disposer</RepositoryUrl>
 		<PackageTags>dispose disposing disposable Idisposable generator generation codegen codegenerator codegeneration</PackageTags>
 		<RepositoryType>git</RepositoryType>
 		<CheckEolTargetFramework>false</CheckEolTargetFramework>

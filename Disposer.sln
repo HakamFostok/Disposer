@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disposer", "src\Disposer\Di
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisposerUser", "src\DisposerUser\DisposerUser.csproj", "{B071E596-AB02-4402-988F-9CFC5271E8A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disposer.Attributes", "src\Disposer.Attributes\Disposer.Attributes.csproj", "{81342218-AC10-4CDD-BF74-551E792954D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{B071E596-AB02-4402-988F-9CFC5271E8A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B071E596-AB02-4402-988F-9CFC5271E8A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B071E596-AB02-4402-988F-9CFC5271E8A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81342218-AC10-4CDD-BF74-551E792954D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81342218-AC10-4CDD-BF74-551E792954D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81342218-AC10-4CDD-BF74-551E792954D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81342218-AC10-4CDD-BF74-551E792954D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FC6F4934-4512-45DB-ABDA-5FAD96742B73} = {78D56637-F921-437D-A9AC-FBEAD78344BE}
 		{B071E596-AB02-4402-988F-9CFC5271E8A9} = {78D56637-F921-437D-A9AC-FBEAD78344BE}
+		{81342218-AC10-4CDD-BF74-551E792954D7} = {78D56637-F921-437D-A9AC-FBEAD78344BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1E93E13-E385-4E16-BAE2-94E17FB4228B}

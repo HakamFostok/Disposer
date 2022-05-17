@@ -3,22 +3,29 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<PackageIconUrl>icon.jpg</PackageIconUrl>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>true</ImplicitUsings>
 		<PackageId>Disposer</PackageId>
-		<Description>A source generator for creating best-practice Disposing boilerplate using a [Disposable] attribute</Description>
+		<Description>A source generator for creating best-practice IDisposable implementation using a [Disposable] attribute</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2" PrivateAssets="all" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
+		<!--<ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" PrivateAssets="all" />-->
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="../../README.md" Pack="true" PackagePath="\" />
-		<None Remove="bin\Debug\netstandard2.0\\Disposer.dll" />
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="true" />
+		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
 	</ItemGroup>
-	
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" />
+	</ItemGroup>
+
 </Project>
