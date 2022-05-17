@@ -14,18 +14,13 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2" PrivateAssets="all" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
-		<!--<ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" PrivateAssets="all" />-->
 	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="../../README.md" Pack="true" PackagePath="\" />
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
-		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="true" />
+		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" />
 	</ItemGroup>
 
 </Project>

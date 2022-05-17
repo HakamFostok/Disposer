@@ -9,6 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" />
 		<ProjectReference Include="..\Disposer\Disposer.csproj" OutputItemType="Analyzer" />
 	</ItemGroup>
 
