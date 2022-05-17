@@ -1,0 +1,32 @@
+<Project>
+
+	<Import Project="version.props" />
+
+	<PropertyGroup>
+		<Authors>Hakam FOSTOK</Authors>
+		<Copyright>Copyright © Hakam FOSTOK</Copyright>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl></PackageProjectUrl>
+		<RepositoryUrl></RepositoryUrl>
+		<PackageTags>dispose disposing disposable Idisposable generator generation codegen codegenerator codegeneration</PackageTags>
+		<RepositoryType>git</RepositoryType>
+		<CheckEolTargetFramework>false</CheckEolTargetFramework>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<DebugType>embedded</DebugType>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<LangVersion>latest</LangVersion>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageOutputPath>$(MSBuildThisFileDirectory)\artifacts</PackageOutputPath>
+	</PropertyGroup>
+
+	<!--  Reproducible build properties-->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+	</ItemGroup>
+
+</Project>
