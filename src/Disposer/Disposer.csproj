@@ -23,4 +23,9 @@
 		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" 
+						PrivateAssets="all" ExcludeAssets="runtime"/>
+	</ItemGroup>
+
 </Project>
