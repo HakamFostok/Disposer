@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
-		<PackageIconUrl>icon.jpg</PackageIconUrl>
+		<PackageIcon>icon.jpg</PackageIcon>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>true</ImplicitUsings>
 		<PackageId>Disposer</PackageId>
@@ -15,8 +15,9 @@
 		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2" PrivateAssets="all" />
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.0.1" PrivateAssets="all" />
 	</ItemGroup>
-
+	
 	<ItemGroup>
+		<None Include="icon.jpg" Pack="true" PackagePath="\"/>
 		<None Include="../../README.md" Pack="true" PackagePath="\" />
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
 		<None Include="$(OutputPath)\Disposer.Attributes.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
@@ -24,8 +25,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" 
-						PrivateAssets="all" ExcludeAssets="runtime"/>
+		<ProjectReference Include="..\Disposer.Attributes\Disposer.Attributes.csproj" 
+						  PrivateAssets="all" ExcludeAssets="runtime"/>
 	</ItemGroup>
+
+	<!--<ItemGroup>
+		<PackageReference Include="CsFactory" Version="1.2.0" GeneratePathProperty="true" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<GetTargetPathDependsOn>$(GetTargetPathDependsOn);GetDependencyTargetPaths</GetTargetPathDependsOn>
+	</PropertyGroup>
+
+	<Target Name="GetDependencyTargetPaths">
+		<ItemGroup>
+			<TargetPathWithTargetPlatformMoniker Include="$(PKGCsFactory)\lib\netstandard2.0\CsBuilder.dll" IncludeRuntimeDependency="false" />
+		</ItemGroup>
+	</Target>-->
 
 </Project>

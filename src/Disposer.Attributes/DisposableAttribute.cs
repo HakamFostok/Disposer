@@ -1,9 +1,13 @@
 ﻿namespace Disposer;
 
 /// <summary>
-/// Add best-practice Disposing pattern to a type.
+/// Implementing <see cref="System.IDisposable"/>System.IDisposable</see> interface in the recommended way.
 /// </summary>
 [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
-public class DisposableAttribute : Attribute
+public class DisposableAttribute : BaseDisposableAttribute
 {
+    public DisposableAttribute() : base()
+    {
+
+    }
 }

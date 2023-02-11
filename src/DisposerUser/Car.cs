@@ -1,17 +1,12 @@
-﻿namespace Project;
+﻿//using Disposer;
 
-[Disposer.Disposable]
-partial class Car
+namespace Project;
+
+//[Disposable]
+//[AsyncDisposable]
+sealed partial class Car12
 {
-    partial void DisposeManaged()
+    public Car12()
     {
-        // free managed resources here
-    }
-
-    partial void DisposeUnmanaged()
-    {
-        // free Unmanaged resources here
     }
 }
-
-

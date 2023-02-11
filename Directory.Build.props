@@ -1,6 +1,6 @@
 <Project>
 
-	<Import Project="version.props" />
+	<!--<Import Project="version.props" />-->
 
 	<PropertyGroup>
 		<Authors>Hakam FOSTOK</Authors>
